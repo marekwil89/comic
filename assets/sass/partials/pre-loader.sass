@@ -1,0 +1,27 @@
+.pre-loader
+  position: fixed
+  background: $white
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  top: 0px
+  right: 0px
+  left: 0px
+  bottom: 0px
+  z-index: 4000
+  
+  .loading
+    font-weight: 700
+    text-transform: uppercase
+    width: 150px
+    color: $red
+    font-size: 30px
+    letter-spacing: 1.5px
+    
+    &:after
+      content: ''
+      animation: dotted 1s infinite
+
+  .bullet
+    animation: move-bullet 1s infinite linear

@@ -1,0 +1,42 @@
+.pageIn
+  animation-name: pageIn
+  animation-duration: 500ms
+  animation-fill-mode: forwards
+
+@keyframes pageIn
+  from
+    transform: rotate3d(0,1,0,100deg)
+    opacity: 0
+
+  to
+    transform: none
+    opacity: 1
+
+.pageOut
+  animation-name: pageOut
+  animation-duration: 600ms
+  animation-fill-mode: forwards
+
+@keyframes pageOut
+  from
+    opacity: 1
+
+  to
+    transform: rotate3d(0,1,0,100deg)
+    opacity: 0
+
+@keyframes dotted
+  0%
+    content: '.'
+  50%
+    content: '..'
+  100%
+    content: '...'
+      
+@keyframes move-bullet
+  100%
+    x: 100%
+
+@keyframes move-bullet
+  100%
+    x: 1000px
